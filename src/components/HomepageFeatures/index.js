@@ -110,14 +110,14 @@ function Feature2({ video, title, description }) {
   return (
     <div className={clsx("col col--5 justify-align-center", styles.col)}>
       <div className={clsx("card", styles.card)}>
-        <video
-          className={styles.video}
+        <video className={styles.video}
+          
           playsInline="playsinline"
           autoPlay="autoplay"
           muted="muted"
           loop="loop"
         >
-          <source src={video} type="video/mp4"></source>
+          <source  src={video} type="video/mp4"></source>
         </video>
         <div className="card-body text--center">
           <h5 className="card-title margin-top--md ">{title}</h5>

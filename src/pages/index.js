@@ -8,13 +8,23 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
 import logo from "../../static/img/download.jpeg";
+import video from "../../static/img/bg_video.mp4"
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx("hero ", styles.heroBanner)}>
+       <video
+                className={styles.video}
+                playsInline="playsinline"
+                autoPlay="autoplay"
+                muted="muted"
+                loop="loop"
+              >
+                <source src={video} type="video/mp4"></source>
+              </video>
       <div className={clsx("container ", styles.herotext)}>
-        <Heading as="h1" className="hero__title">
+        <Heading as="h1" className={clsx("container ", styles.herotext2)}>
           <img className={clsx("logo ", styles.logo)} src={logo}></img>
           Tailwind CSS
         </Heading>
