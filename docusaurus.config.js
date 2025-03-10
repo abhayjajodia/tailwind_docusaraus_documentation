@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Tailwind Tutorials',
-  tagline: 'Best UI',
+  title: 'Tailwind',
+  tagline: 'Dinosaurs are cool',
   favicon: 'img/download.jpeg',
 
   // Set the production url of your site here
@@ -76,10 +76,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        style:"dark",
-        title: 'Tailwind Tutorials',
+        title: 'Tailwind',
         logo: {
-          alt: 'Tailwind Logo',
+          alt: 'My Site Logo',
           src: 'img/download.jpeg',
         },
         items: [
@@ -90,7 +89,11 @@ const config = {
             label: 'Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          
+          {
+            href: 'https://github.com/facebook/docusaurus',
+            label: 'GitHub',
+            position: 'right',
+          },
         ],
       },
       footer: {
@@ -109,8 +112,12 @@ const config = {
             title: 'Community',
             items: [
               {
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              },
+              {
                 label: 'Discord',
-                href: 'https://discordapp.com/',
+                href: 'https://discordapp.com/invite/docusaurus',
               },
             ],
           },
@@ -123,7 +130,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/abhayjajodia/tailwind_docusaraus_documentation.git',
+                href: 'https://github.com/facebook/docusaurus',
               },
             ],
           },
